@@ -21,7 +21,7 @@ Utibu Health is a mobile application prototype developed using Flutter. It enabl
 
 1. Clone the repository:
    ```
-   git clone https://github.com/victor-imani/utibu_Health.git
+   git clone https://github.com/victor-imani/utibu_health.git
    ```
 2. Navigate to the project directory:
    ```
