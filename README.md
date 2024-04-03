@@ -68,7 +68,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) f
 - Node.js Community
 - Sequelize Contributors
 - All developers and contributors of the Utibu Health project
-```
 
 # Utibu Health
 
@@ -149,4 +148,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) f
 - Flutter Community
 - Hospital partners and medical advisors
 - All contributors and supporters of the Utibu Health project
-```
