@@ -1,0 +1,221 @@
+{
+	"info": {
+		"_postman_id": "41e40fdd-9551-4527-907b-65b311454f06",
+		"name": "Utibu",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29433871"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Register User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n            \"name\": \"Likert\",\r\n            \"email\": \"likert@example.com\",\r\n            \"password\": \"password123\",\r\n            \"passwordConfirm\": \"password123\",\r\n            \"phone\": \"0712456723\"\r\n          \r\n    \r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/auth/register",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"email\": \"majpr@example.com\",\r\n     \"password\": \"password123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/auth/login",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Drugs",
+			"item": [
+				{
+					"name": "Add Drug",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n//   {\r\n//     \"name\": \"Lamivudine\",\r\n//     \"type\": \"Pills\",\r\n//     \"quantity\": 100,\r\n//     \"price_per_unit\": 5.99\r\n//   },\r\n//   {\r\n//     \"name\": \"Zidovudine\",\r\n//     \"type\": \"Pills\",\r\n//     \"quantity\": 80,\r\n//     \"price_per_unit\": 7.50\r\n//   },\r\n//   {\r\n//     \"name\": \"Tenofovir\",\r\n//     \"type\": \"Pills\",\r\n//     \"quantity\": 120,\r\n//     \"price_per_unit\": 8.25\r\n//   },\r\n//   {\r\n//     \"name\": \"Efavirenz\",\r\n//     \"type\": \"Pills\",\r\n//     \"quantity\": 90,\r\n//     \"price_per_unit\": 6.75\r\n//   },\r\n//   {\r\n//     \"name\": \"Enalapril\",\r\n//     \"type\": \"Pills\",\r\n//     \"quantity\": 150,\r\n//     \"price_per_unit\": 4.50\r\n//   }\r\n//   {\r\n//     \"name\": \"Losartan\",\r\n//     \"type\": \"Pills\",\r\n//     \"quantity\": 110,\r\n//     \"price_per_unit\": 9.99\r\n//   },\r\n//   {\r\n//     \"name\": \"Hydrochlorothiazide\",\r\n//     \"type\": \"Pills\",\r\n//     \"quantity\": 100,\r\n//     \"price_per_unit\": 5.25\r\n//   },\r\n//   {\r\n//     \"name\": \"Amlodipine\",\r\n//     \"type\": \"Pills\",\r\n//     \"quantity\": 130,\r\n//     \"price_per_unit\": 7.85\r\n//   },\r\n//   {\r\n//     \"name\": \"Atenolol\",\r\n//     \"type\": \"Pills\",\r\n//     \"quantity\": 70,\r\n//     \"price_per_unit\": 3.75\r\n//   },\r\n//   {\r\n//     \"name\": \"Nifedipine\",\r\n//     \"type\": \"Pills\",\r\n//     \"quantity\": 100,\r\n//     \"price_per_unit\": 6.50\r\n//   },\r\n//   {\r\n//     \"name\": \"Propranolol\",\r\n//     \"type\": \"Pills\",\r\n//     \"quantity\": 85,\r\n//     \"price_per_unit\": 4.99\r\n//   },\r\n//   {\r\n//     \"name\": \"Clonidine\",\r\n//     \"type\": \"Pills\",\r\n//     \"quantity\": 120,\r\n//     \"price_per_unit\": 7.25\r\n//   },\r\n//   {\r\n//     \"name\": \"Methyldopa\",\r\n//     \"type\": \"Pills\",\r\n//     \"quantity\": 90,\r\n//     \"price_per_unit\": 6.75\r\n//   },\r\n//   {\r\n//     \"name\": \"Diltiazem\",\r\n//     \"type\": \"Pills\",\r\n//     \"quantity\": 110,\r\n//     \"price_per_unit\": 8.50\r\n//   },\r\n  {\r\n    \"name\": \"Furosemide\",\r\n    \"type\": \"Pills\",\r\n    \"quantity\": 95,\r\n    \"price_per_unit\": 5.99\r\n  }\r\n]\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/drugs",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"drugs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Drugs",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Orders",
+			"item": [
+				{
+					"name": "Add Order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"orderItems\": [\r\n    {\r\n      \"medicationName\": \"Zidovudine\",\r\n      \"quantity\": 8,\r\n      \"id\": 2\r\n    },\r\n    {\r\n      \"medicationName\": \"Tenofovir\",\r\n      \"quantity\": 5,\r\n       \"id\": 3\r\n    },\r\n    {\r\n      \"medicationName\": \"Losartan\",\r\n      \"quantity\": 12,\r\n       \"id\": 6\r\n    }\r\n  ],\r\n  \"userId\": 5,\r\n  \"payment\": \"Pay Later\",\r\n  \"transactionCode\": \"RTXYUI\",\r\n  \"amount\": 221.13\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/orders/placeOrder",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"orders",
+								"placeOrder"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reports",
+			"item": [
+				{
+					"name": "Generate",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/reports/generate",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"reports",
+								"generate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch Reports",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/reports/fetchReports/5",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"reports",
+								"fetchReports",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Payments",
+			"item": [
+				{
+					"name": "createPayment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"transactionCode\": \"RTXYUIW\",\r\n    \"amount\": 221.13\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/payments/createPayment",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"payments",
+								"createPayment"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
