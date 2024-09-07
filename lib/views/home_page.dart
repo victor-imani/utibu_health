@@ -31,7 +31,7 @@ class _HomePageState extends State<HomePage> {
 
   List<Widget> _buildScreens() {
     return [
-      HomePageBody(),
+      const HomePageBody(),
       OrderPage(),
       StatementPage(),
       AccountPage(),

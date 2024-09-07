@@ -19,9 +19,9 @@ class DrugController extends ChangeNotifier {
         drugs.clear(); // Clear existing drugs before adding new ones
 
         // Convert the response data to Drug objects and add to the list
-        responseData.forEach((item) {
+        for (var item in responseData) {
           drugs.add(Drug.fromJson(item));
-        });
+        }
 
         notifyListeners(); // Notify listeners that data has been updated
       } else {

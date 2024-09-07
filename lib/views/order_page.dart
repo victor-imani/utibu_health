@@ -7,7 +7,7 @@ import 'package:utibu_health/utils/app_style.dart';
 import 'package:utibu_health/utils/colors.dart';
 
 class OrderPage extends StatefulWidget {
-  OrderPage({Key? key}) : super(key: key);
+  const OrderPage({Key? key}) : super(key: key);
 
   @override
   State<OrderPage> createState() => _OrderPageState();

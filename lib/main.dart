@@ -11,7 +11,7 @@ void main() async{
 }
 
 class MyApp extends StatelessWidget {
-  MyApp({Key? key}) : super(key: key);
+  const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       builder: (BuildContext context, Widget? widget) {
       
         
-        return GetMaterialApp(
+        return const GetMaterialApp(
           title: 'Utibu Health',
           debugShowCheckedModeBanner: false,
           home: LoginPage(),
